@@ -1,0 +1,5 @@
+C:\Users\autologon\source\repos\FuracaoCNC\obj\Debug\FuracaoCNC.csproj.AssemblyReference.cache
+C:\Users\autologon\source\repos\FuracaoCNC\obj\Debug\FuracaoCNC.Form1.resources
+C:\Users\autologon\source\repos\FuracaoCNC\obj\Debug\FuracaoCNC.Properties.Resources.resources
+C:\Users\autologon\source\repos\FuracaoCNC\obj\Debug\FuracaoCNC.csproj.GenerateResource.cache
+C:\Users\autologon\source\repos\FuracaoCNC\obj\Debug\FuracaoCNC.csproj.CoreCompileInputs.cache
