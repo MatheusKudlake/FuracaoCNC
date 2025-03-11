@@ -13,3 +13,13 @@ C:\Users\mkudl\OneDrive\Documentos\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.csproj
 C:\Users\mkudl\OneDrive\Documentos\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.csproj.CoreCompileInputs.cache
 C:\Users\mkudl\OneDrive\Documentos\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.exe
 C:\Users\mkudl\OneDrive\Documentos\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.pdb
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\bin\Debug\FuracaoCNC.exe.config
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\bin\Debug\FuracaoCNC.exe
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\bin\Debug\FuracaoCNC.pdb
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.csproj.AssemblyReference.cache
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.Form1.resources
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.Properties.Resources.resources
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.csproj.GenerateResource.cache
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.csproj.CoreCompileInputs.cache
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.exe
+C:\Users\mkudl\Documents\GitHub\FuracaoCNC\obj\Debug\FuracaoCNC.pdb

@@ -36,16 +36,16 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.programa = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.profInicial = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profInicial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -114,9 +114,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(16, 201);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 16);
+            this.label6.Size = new System.Drawing.Size(91, 16);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Profundidade do início:";
+            this.label6.Text = "Profundidade:";
             // 
             // label7
             // 
@@ -127,14 +127,14 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Avanço inicial:";
             // 
-            // textBox7
+            // programa
             // 
-            this.textBox7.Location = new System.Drawing.Point(361, 32);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(307, 297);
-            this.textBox7.TabIndex = 14;
+            this.programa.Location = new System.Drawing.Point(361, 32);
+            this.programa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.programa.Multiline = true;
+            this.programa.Name = "programa";
+            this.programa.Size = new System.Drawing.Size(307, 297);
+            this.programa.TabIndex = 14;
             // 
             // label8
             // 
@@ -156,12 +156,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // numericUpDown1
+            // profInicial
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(164, 96);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown1.TabIndex = 17;
+            this.profInicial.Location = new System.Drawing.Point(164, 96);
+            this.profInicial.Name = "profInicial";
+            this.profInicial.Size = new System.Drawing.Size(89, 22);
+            this.profInicial.TabIndex = 17;
             // 
             // numericUpDown2
             // 
@@ -208,10 +208,10 @@
             this.Controls.Add(this.numericUpDown4);
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.profInicial);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.programa);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.checkBox1);
@@ -224,7 +224,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profInicial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
@@ -245,10 +245,10 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox programa;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown profInicial;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.NumericUpDown numericUpDown4;

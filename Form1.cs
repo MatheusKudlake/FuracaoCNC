@@ -33,7 +33,8 @@ namespace FuracaoCNC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            programa.AppendText("GOXOZ" + (profInicial.Value + 1));
+            programa.AppendText(Environment.NewLine);
         }
     }
 }
