@@ -40,17 +40,17 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.profInicial = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.incrementoDeCorte = new System.Windows.Forms.NumericUpDown();
+            this.avanco = new System.Windows.Forms.NumericUpDown();
+            this.profFinal = new System.Windows.Forms.NumericUpDown();
+            this.profundidade = new System.Windows.Forms.NumericUpDown();
+            this.avancoInicial = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.profInicial)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incrementoDeCorte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avanco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profFinal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profundidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avancoInicial)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,6 +108,7 @@
             this.checkBox1.TabIndex = 9;
             this.checkBox1.Text = "Avanço menor no início";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.check_change);
             // 
             // label6
             // 
@@ -158,56 +159,68 @@
             // 
             // profInicial
             // 
+            this.profInicial.DecimalPlaces = 3;
             this.profInicial.Location = new System.Drawing.Point(164, 96);
             this.profInicial.Name = "profInicial";
             this.profInicial.Size = new System.Drawing.Size(89, 22);
             this.profInicial.TabIndex = 17;
             // 
-            // numericUpDown2
+            // incrementoDeCorte
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(164, 64);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown2.TabIndex = 18;
+            this.incrementoDeCorte.DecimalPlaces = 3;
+            this.incrementoDeCorte.Location = new System.Drawing.Point(164, 64);
+            this.incrementoDeCorte.Name = "incrementoDeCorte";
+            this.incrementoDeCorte.Size = new System.Drawing.Size(89, 22);
+            this.incrementoDeCorte.TabIndex = 18;
             // 
-            // numericUpDown3
+            // avanco
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(164, 32);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown3.TabIndex = 19;
+            this.avanco.DecimalPlaces = 3;
+            this.avanco.Location = new System.Drawing.Point(164, 32);
+            this.avanco.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.avanco.Name = "avanco";
+            this.avanco.Size = new System.Drawing.Size(89, 22);
+            this.avanco.TabIndex = 19;
             // 
-            // numericUpDown4
+            // profFinal
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(164, 133);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown4.TabIndex = 20;
+            this.profFinal.DecimalPlaces = 3;
+            this.profFinal.Location = new System.Drawing.Point(164, 133);
+            this.profFinal.Name = "profFinal";
+            this.profFinal.Size = new System.Drawing.Size(89, 22);
+            this.profFinal.TabIndex = 20;
             // 
-            // numericUpDown5
+            // profundidade
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(164, 199);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown5.TabIndex = 21;
+            this.profundidade.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.profundidade.DecimalPlaces = 3;
+            this.profundidade.Location = new System.Drawing.Point(164, 199);
+            this.profundidade.Name = "profundidade";
+            this.profundidade.Size = new System.Drawing.Size(89, 22);
+            this.profundidade.TabIndex = 21;
             // 
-            // numericUpDown6
+            // avancoInicial
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(164, 229);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown6.TabIndex = 22;
+            this.avancoInicial.DecimalPlaces = 3;
+            this.avancoInicial.Location = new System.Drawing.Point(164, 229);
+            this.avancoInicial.Name = "avancoInicial";
+            this.avancoInicial.Size = new System.Drawing.Size(89, 22);
+            this.avancoInicial.TabIndex = 22;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 360);
-            this.Controls.Add(this.numericUpDown6);
-            this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.avancoInicial);
+            this.Controls.Add(this.profundidade);
+            this.Controls.Add(this.profFinal);
+            this.Controls.Add(this.avanco);
+            this.Controls.Add(this.incrementoDeCorte);
             this.Controls.Add(this.profInicial);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -225,11 +238,11 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.profInicial)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incrementoDeCorte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avanco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profFinal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profundidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avancoInicial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,11 +262,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown profInicial;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown incrementoDeCorte;
+        private System.Windows.Forms.NumericUpDown avanco;
+        private System.Windows.Forms.NumericUpDown profFinal;
+        private System.Windows.Forms.NumericUpDown profundidade;
+        private System.Windows.Forms.NumericUpDown avancoInicial;
     }
 }
 
