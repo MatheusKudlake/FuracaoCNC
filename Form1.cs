@@ -29,10 +29,10 @@ namespace FuracaoCNC
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == false)
+            if (inicioLento.Checked == false)
             {
-                profundidade.Enabled = false;
-                avancoInicial.Enabled = false;
+                profLento.Enabled = false;
+                avancoLento.Enabled = false;
             }
         }
 
@@ -47,6 +47,12 @@ namespace FuracaoCNC
             }
             programa.AppendText("G0X0Z" + (profInicial.Value + 1));
             programa.AppendText(Environment.NewLine);
+
+            if (inicioLento.Checked)
+            {
+                programa.AppendText("G1Z" + profLento.Value + "F" + avancoLento.Value);
+                ultimoFuro -= (float) profLento.Value;
+            }
 
             for(int i = 0; i < repeticoes; i++)
             {
@@ -69,15 +75,15 @@ namespace FuracaoCNC
 
         private void check_change(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == false)
+            if (inicioLento.Checked == false)
             {
-                profundidade.Enabled = false;
-                avancoInicial.Enabled = false;
+                profLento.Enabled = false;
+                avancoLento.Enabled = false;
             }
             else
             {
-                profundidade.Enabled = true;
-                avancoInicial.Enabled = true;
+                profLento.Enabled = true;
+                avancoLento.Enabled = true;
             }
         }
     }
